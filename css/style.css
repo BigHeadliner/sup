@@ -359,6 +359,7 @@ img{
     justify-content: center; 
     align-items: center; 
     background-image: url('../images/star.svg');
+    transition: transform .3s;
 } 
  
 .buy__price:hover{ 
