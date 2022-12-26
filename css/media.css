@@ -4,41 +4,145 @@
 
     .header__decor-text--two {
         left: 0;
-    } 
-     
-     
-    .header__content-box{ 
+    }
+
+
+    .header__content-box {
         z-index: 5;
-    }  
-      
+    }
+
     /* buy */
-     
-    .buy__inner{ 
-      flex-wrap: wrap; 
-      justify-content: center;
-    } 
-     
-    .buy__img{ 
-        order: -1; 
+
+    .buy__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buy__img {
+        order: -1;
         width: 100%;
-    } 
-     
-    .buy__content{ 
+    }
+
+    .buy__content {
         width: 100%;
-    } 
-     
-    .buy__price{ 
+    }
+
+    .buy__price {
         pointer-events: none;
-    } 
-     
-    .buy__item{ 
-        width: 100%; 
+    }
+
+    .buy__item {
+        width: 100%;
         max-width: 600px;
+    }
+
+    /* gallery */
+
+    .gallery-max {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .gallery-max__img {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    /* footer   */
+
+    .footer__gallery-item {
+        width: 100%;
+        align-self: stretch;
+    }
+
+}
+
+@media(max-width: 1175px) {
+
+    /* gallery */
+
+    .gallery__box {
+        flex-wrap: wrap; 
+        justify-content: center; 
+       
+    }
+
+    .gallery-min {
+        margin-top: 0;
+    }
+
+    .gallery__text {
+        width: 100%;
+    }
+
+    .gallery-min__img {
+         /* width: 100%;   */
+        align-self: stretch;
+    }
+
+    .gallery-min {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+         /* width: 100%;   */
     }
 
 } 
  
  
+@media(max-width:1050px){  
+     
+     /* technology */
+     
+    .technology__btn {
+        right: 50px;
+    }
+} 
+ 
+@media(max-width:1017px){   
+     
+    /* info */
+
+    .info__top {
+        margin-bottom: 57vh;
+    } 
+      
+    /* buy  */
+
+    .buy {
+        padding: 35px 0 0;
+    } 
+     
+    .buy__inner {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }  
+     
+    /* technology */ 
+     
+    .technology {
+        margin-bottom: 115px;
+    }
+     
+    .technology__top-inner {
+        position: relative;
+        min-height: 97vh;
+    }  
+     
+    /* gallery */
+     
+    .gallery__box {
+        display: flex;
+        gap: 68px;
+        margin-top: 80px;
+    } 
+     
+    .gallery-min {
+        margin-bottom: 115px; 
+    }
+}
+
+
 @media(max-width: 1000px) {
 
     /* info  */
@@ -50,36 +154,172 @@
 
     .info__top-text {
         width: 100%;
-    } 
-     
-    .info__top-text--two{ 
-        padding-bottom: 25px; 
-        padding-top: 45px;
-    } 
-     
-    .info__top-img{ 
-        width: 227px; 
-        margin: 0 auto;  
-        display: block;
-    } 
-     
-    .info__specs{ 
-       display: block;
     }
 
-}  
- 
-  
-@media(max-width: 840px) {   
-     
-    /* buy */
-     
-    .buy__price{ 
-        bottom: auto; 
-        top: -350px;
+    .info__top-text--two {
+        padding-bottom: 25px;
+        padding-top: 45px;
+    }
+
+    .info__top-img {
+        width: 227px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .info__specs {
+        display: block;
+    }
+
+    /* footer  */
+
+    .footer__top {
+        text-align: center;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo {
+        order: -1;
+        margin: 0 auto 50px;
+        display: inline-block;
+    }
+
+    .footer__gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer__menu-list {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__menu-item {
+        padding: 15px 0;
+    }
+
+    .footer__social-title {
+        text-align: center;
     }
 
 } 
+ 
+@media(max-width: 981px) {   
+     
+    /* info */
+     
+    .info {
+        margin-top: 0px; 
+    } 
+     
+    .info__btn {
+        position: absolute;
+        bottom: -10px;
+        right: auto;
+        left: auto;
+    } 
+     
+    .info__top {
+        margin-bottom: 25vh;
+    } 
+      
+    /* footer */
+     
+    .footer {
+        padding: 70px 0 50px;
+    }
+
+}
+
+
+@media(max-width: 840px) {
+
+    /* buy */
+
+    .buy__price {
+        bottom: auto;
+        top: -350px;
+    }
+
+    /* gallery */
+
+    .gallery-min {
+        margin-bottom: 50px;
+    }
+
+    .gallery-max__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+} 
+ 
+@media(max-width:800px){  
+     
+     /* info */
+     
+    .info__top-text {
+        padding-top: 50px;  
+        z-index: 7;
+    }  
+     
+    .info__top {
+        margin-bottom: 9vh;
+    } 
+     
+    .buy__inner {
+        gap: 40px; 
+    }  
+     
+    .buy__title {
+        margin-bottom: 40px; 
+    } 
+      
+     /* technology  */
+
+    .technology__top-inner {
+        position: relative;
+        min-height: 87vh;
+    }  
+      
+
+     /* gallery */
+     
+    .gallery-min__img {
+       width: 100%;   
+       align-self: stretch;
+   }
+
+   .gallery-min {
+       grid-template-columns: 2fr 1fr;
+       grid-template-rows: auto auto;
+       width: 100%;   
+   } 
+
+      
+    /* footer  */ 
+     
+    .footer {
+        padding: 70px 0 39px;
+    }
+
+    .footer__logo {
+        margin: 0 auto 40px; 
+    } 
+     
+    .footer__form-btn {
+        margin-bottom: 80px; 
+    } 
+     
+    .footer__social-title {
+        margin-bottom: 40px; 
+    }
+
+}
 
 
 @media(max-width: 720px) {
@@ -98,65 +338,186 @@
 
     .header__content-box {
         margin-right: 0;
+    } 
+      
+     
+    /* technology */
+     
+    .technology__btn{ 
+        right: 50px; 
+        top: 40vh;
     }
 
-}  
- 
-  
- 
-@media(max-width: 630px) {       
-     
-    .title{ 
-        font-size: 48px; 
+}
+
+
+
+@media(max-width: 630px) {
+
+    .title {
+        font-size: 48px;
         line-height: 56px;
     }
 
 
     /* info  */
-    
-    .info__specs-list{ 
+
+    .info__specs-list {
         width: 100%;
-    } 
-     
-   .info__specs-item{ 
+    }
+
+    .info__specs-item {
         display: block;
     }
 
-}  
- 
-@media(max-width:525px) {
-      
-    /* fancybox  */
+    /* gallery */
 
- .fancybox-slide { 
-     padding: 10px;
- } 
+    .gallery-min {
+        padding: 20px 10px 20px;
+    }
 
 } 
  
-@media(max-width: 500px) {      
+   
+@media(max-width:590px) { 
+     
+     /* header  */
 
-     /* buy */ 
+    .header__content { 
+        display: block;
+    }   
+      
+    /* technology  */ 
+     
+    .technology {
+        margin-bottom: 79px;
+    }
 
-    .buy__price{ 
-      width: 170px; 
-      height: 168px; 
-      background-size: cover; 
-      top: -185px;
+    .technology__top-box {
+        bottom: 40px; 
+    } 
+     
+    /* gallery */
+
+    .gallery__box {
+        margin-top: 50px; 
+    }
+      
+     /* footer  */
+
+    .footer {
+        padding: 50px 0 15px;
+    } 
+
+}
+
+
+@media(max-width:525px) {
+
+    /* fancybox  */
+
+    .fancybox-slide {
+        padding: 10px;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    /* buy */
+
+    .buy__price {
+        width: 170px;
+        height: 168px;
+        background-size: cover;
+        top: -185px;
     }
 }
 
-  
-@media(max-width: 414px) {  
+ 
+@media(max-width:474px){  
+     
+      /* info */
+     
+    .info__btn {
+        position: absolute;
+        bottom: -17px;
+        right: 97px; 
+    }
+}   
+ 
+@media(max-width: 434px) {  
       
-     /* hrader */ 
+    /* technology  */
+
+    .technology__btn { 
+        display: none;
+    }
+
+} 
+
+
+@media(max-width: 414px) {
+
+    /* hrader */
 
     .header__decor-text {
         display: none;
-    } 
-     
-    .header__content{ 
+    }
+
+    .header__content {
         z-index: 5;
+    }
+
+    /* gallery  */
+
+    .gallery-min::before {
+        display: none;
+    }
+
+    .gallery-min,
+    .gallery-max {
+        gap: 10px;
+    }
+
+    /* technology */
+
+    .technology__title {
+
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    /* footer */
+
+    .footer__title {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .footer__logo svg {
+        width: 90%;
+    }
+
+} 
+ 
+ 
+@media(max-width: 400px) {  
+      
+    /* gallery   */
+
+    .gallery__box {
+        gap: 45px;
+    } 
+
+    .gallery-max{
+        display: none;
+    } 
+      
+    /* technology  */
+
+    .technology {
+        margin-bottom: 9px;
     }
 
 }

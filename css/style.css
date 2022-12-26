@@ -36,7 +36,7 @@ img{
     max-width: 1230px; 
     padding: 0 15px;  
     margin: 0 auto; 
-    border: 1px solid green; 
+    border: 1px solid transparent; 
 }  
  
 .title{ 
@@ -408,7 +408,8 @@ img{
 .technology__btn{ 
     right: 350px; 
     top: 50vh; 
-    position: absolute;
+    position: absolute; 
+    z-index: 7;
 } 
  
 .technology__top-box{ 
@@ -459,7 +460,7 @@ img{
     margin-bottom: 150px;
     position: relative;
     padding: 72px 31px 52px; 
-    border: 1px solid fuchsia; 
+    border: 1px solid transparent; 
     max-height: 909px;
 }   
  
